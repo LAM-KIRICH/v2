@@ -1,0 +1,26 @@
+-- Property Listings Table
+CREATE TABLE PropertyListings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cover VARCHAR(255) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    price VARCHAR(50) NOT NULL,
+    type VARCHAR(100) NOT NULL
+);
+
+-- Client Table
+CREATE TABLE Client (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    full_name VARCHAR(100) NOT NULL,
+    address VARCHAR(255),
+    phone VARCHAR(20)
+);
+
+
+run server.js
+
+cd backend => npm run dev 
+
